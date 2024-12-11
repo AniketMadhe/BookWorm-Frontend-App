@@ -21,7 +21,9 @@ function UpdateBook() {
     const fetchBook = async () => {
       try {
         console.log("Fetching book data...");
-        const response = await axios.get(`http://localhost:4000/api/${id}`);
+        const response = await axios.get(
+          `https://bookworm-backend-47w5.onrender.com/api/${id}`
+        );
         console.log("Fetched book response:", response.data);
         setBook(response.data);
       } catch (e) {
@@ -47,7 +49,10 @@ function UpdateBook() {
       price: parseFloat(book.price),
     };
     try {
-      await axios.put(`http://localhost:4000/api/${id}`, updatedBook);
+      await axios.put(
+        `https://bookworm-backend-47w5.onrender.com/api/${id}`,
+        updatedBook
+      );
       alert("Book updated Succesfully!");
       navigate("/allBooks");
     } catch (e) {

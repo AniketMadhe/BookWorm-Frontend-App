@@ -9,7 +9,9 @@ function AllBooks() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/");
+        const response = await axios.get(
+          "https://bookworm-backend-47w5.onrender.com/api/"
+        );
         console.log("fetched Books", response.data);
         setBooks(response.data);
       } catch (e) {
@@ -26,7 +28,9 @@ function AllBooks() {
 
   const handleDelete = async (_id) => {
     try {
-      await axios.delete(`http://localhost:4000/api/${_id}`);
+      await axios.delete(
+        `https://bookworm-backend-47w5.onrender.com/api/${_id}`
+      );
       console.log("Deleted Succesfully!");
       setBooks(books.filter((book) => book._id !== _id));
     } catch (e) {

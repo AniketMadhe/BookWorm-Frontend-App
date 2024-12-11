@@ -9,7 +9,9 @@ function Carousel() {
     const fetchImages = async () => {
       try {
         console.log("Fetching images");
-        const response = await axios.get("http://localhost:4000/api/");
+        const response = await axios.get(
+          "https://bookworm-backend-47w5.onrender.com/api/"
+        );
         const topImages = response.data.slice(0, 4);
         setBookImages(topImages);
       } catch (e) {
