@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(to bottom, #6a7dd8, #ffffff);
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+}
+#bookLogo {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 95px;
+  height: 94px;
+}
+#bookLogo img {
+  height: 100%;
+  width: 100%;
+}
+.navbar h1 {
+  margin: auto 345px;
+  color: #2d2d2d;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  background: linear-gradient(to top, #6a7cd87a, rgba(255, 255, 255, 0.219));
+  color: #0a0f29;
+}
+.navbar li a:hover {
+  color: #5968b3;
+}

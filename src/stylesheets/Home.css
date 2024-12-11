@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#heading {
+  font-family: "verdana";
+  color: rgb(6, 7, 43);
+}
+#title {
+  font-family: "candara";
+  font-size: 16px;
+}
+#authorWho {
+  font-family: "candara";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: oblique;
+  text-indent: 10px;
+}
+
+.listOfBooks {
+  margin: 20px 20px 20px 20px;
+}
+.listOfBooks h1 {
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+.listOfBooks ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-left: 20px;
+  justify-content: flex-start;
+}
+
+.singleBook {
+  border: 1px solid rgba(100, 99, 99, 0.863);
+  overflow-wrap: break-word;
+  width: 205px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  border-radius: 3px;
+  box-shadow: 4px 4px 3px 3px rgb(153, 152, 152);
+}
+.singleBook .imageDiv {
+  width: 100%;
+  height: 70%;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.863);
+}
+.singleBook .buttonDiv {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.singleBook .buttonDiv button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2px;
+  padding: 6px 12px;
+  height: 75%;
+  cursor: pointer;
+}
+#bUpdate {
+  color: white;
+  background-color: #001f3f;
+  border: 1px solid rgba(0, 0, 0, 0.507);
+  font-size: 13px;
+  font-weight: bold;
+}
+#bUpdate:hover {
+  color: rgb(216, 210, 210);
+  background-color: #023263;
+}
+#bDelete {
+  color: white;
+  background-color: red;
+  border: 1px solid rgba(27, 27, 27, 0.534);
+  font-size: 13px;
+  font-weight: bold;
+}
+#bDelete:hover {
+  color: rgb(238, 237, 237);
+  background-color: rgb(165, 8, 8);
+}
+.singleBook li {
+  height: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.singleBook h3 {
+  text-align: center;
+  font-weight: 600;
+  background-color: rgb(211, 207, 207);
+  width: 95%;
+
+  padding-bottom: 5px;
+  font-size: 17px;
+}
+#authorDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#authorDiv p {
+  width: 70%;
+  margin-left: 5px;
+}
+#authorDiv h4 {
+  margin-left: 15px;
+  width: 25%;
+  font-size: 14px;
+}
+.singleBook p {
+  flex-wrap: nowrap;
+  padding-top: 5px;
+  background-color: rgb(226, 223, 223);
+
+  overflow: hidden;
+  width: 60%;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.singleBook .imageDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#formDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+.addForm {
+  width: 70%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  /* background: linear-gradient(to bottom, pink, white); */
+  background: linear-gradient(to bottom, white, rgb(19, 18, 34));
+}
+.addForm input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(32, 30, 30);
+}
+.addForm #description {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(32, 30, 30);
+}
+.addForm button {
+  padding: 4px 8px;
+  margin-top: 15px;
+}
+.outerDiv {
+  width: 30%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.outerDiv h2 {
+  text-align: center;
+  border: 1px solid black;
+}
+.outerDiv lable {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+#addBookText {
+  background: linear-gradient(to bottom, rgb(40, 40, 77), black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 25px;
+}
+#submitBtn {
+  background: linear-gradient(to bottom, #7fbbce, #072b4d);
+  color: white;
+  border: 2px solid rgb(27, 27, 27);
+  border-radius: 3px;
+}
+#submitBtn:hover {
+  background: linear-gradient(to bottom, #5c8794, #071d31);
+  color: white;
+  cursor: pointer;
+}
+#submitBtnUpdate {
+  background: linear-gradient(to bottom, #7fbbce, #072b4d);
+  color: black;
+  border: 2px solid rgb(27, 26, 26);
+  border-radius: 3px;
+}
+#submitBtnUpdate:hover {
+  background: linear-gradient(to bottom, #5c8794, #071d31);
+  color: black;
+  cursor: pointer;
+}
+#updateDesc {
+  padding: 10px 14px;
+  border-radius: 5px;
+}
